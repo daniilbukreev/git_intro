@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Print date and time to console
         run: |
-          echo 'date'
+          echo $(date)
