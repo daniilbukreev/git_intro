@@ -1,0 +1,16 @@
+name: Simple homework 1 CI job
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print date and time to console
+        run: |
+          dt=(date '+%d/%m/%Y %H:%M:%S')
+          echo "$dt"
