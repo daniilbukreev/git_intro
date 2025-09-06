@@ -12,5 +12,4 @@ jobs:
     steps:
       - name: Print date and time to console
         run: |
-          dt=(date '+%d/%m/%Y %H:%M:%S')
-          echo "$dt"
+          echo 'date'
