@@ -1,0 +1,15 @@
+name: HW 2 CI job
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message to console
+        run: |
+          mvn -f maven/pom.xml package
