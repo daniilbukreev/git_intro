@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Print message to console
         run: |
-          mvn -f maven/pom.xml package
+          mvn package
